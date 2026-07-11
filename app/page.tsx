@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Counter } from "./components/Counter";
 import { FloatingWidgets } from "./components/FloatingWidgets";
+import { Footer } from "./components/Footer";
 import { Icon, type IconName } from "./components/Icon";
 import { Navbar } from "./components/Navbar";
 import { Reveal } from "./components/Reveal";
@@ -334,96 +335,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-line">
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-            <div className="flex flex-col gap-4">
-              <span className="font-heading text-2xl font-extrabold tracking-wide">
-                POWER<span className="text-accent">FITNESS</span>
-              </span>
-              <p className="max-w-sm text-sm leading-relaxed text-muted">
-                Especialistas en entrenamiento de alta exigencia. Red de 14
-                sedes en Chile con tecnología de vanguardia.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h3 className="font-heading text-lg font-bold tracking-wider">
-                CONTACTO
-              </h3>
-              <ul className="flex flex-col gap-3 text-sm text-muted">
-                <li>
-                  <a href="#" className="transition-colors hover:text-foreground">
-                    Atención al cliente
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-foreground">
-                    Corporativo
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="transition-colors hover:text-foreground">
-                    Reclutamiento
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h3 className="font-heading text-lg font-bold tracking-wider">
-                MENÚ
-              </h3>
-              <ul className="flex flex-col gap-3 text-sm text-muted">
-                {[
-                  ["Inicio", "#inicio"],
-                  ["Sedes", "#sedes"],
-                  ["Planes", "#planes"],
-                  ["Convenios", "#convenios"],
-                  ["Equipamiento", "/equipamiento"],
-                  ["Política de Privacidad", "#"],
-                  ["Términos y Condiciones", "#"],
-                ].map(([label, href]) => (
-                  <li key={label}>
-                    <a
-                      href={href}
-                      className="transition-colors hover:text-foreground"
-                    >
-                      {label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h3 className="font-heading text-lg font-bold tracking-wider">
-                SÍGUENOS
-              </h3>
-              <div className="flex gap-3">
-                {(
-                  [
-                    ["whatsapp", "Escríbenos por WhatsApp"],
-                    ["instagram", "Síguenos en Instagram"],
-                    ["facebook", "Síguenos en Facebook"],
-                  ] as [IconName, string][]
-                ).map(([icon, label]) => (
-                  <a
-                    key={icon}
-                    href="#"
-                    aria-label={label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-surface text-muted transition duration-200 hover:scale-110 hover:border-accent/60 hover:text-foreground"
-                  >
-                    <Icon name={icon} size={16} />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-6 text-[13px] text-muted-2">
-            <p>© 2026 Power Fitness Chile. Todos los derechos reservados.</p>
-            <p>Tu entrenamiento, sin límites.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <FloatingWidgets />
     </div>

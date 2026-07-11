@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FloatingWidgets } from "../components/FloatingWidgets";
+import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import { SedesExplorer } from "./SedesExplorer";
 
@@ -34,6 +35,7 @@ export default function SedesPage() {
           <SedesExplorer />
         </div>
       </main>
+      <Footer />
       <FloatingWidgets />
     </div>
   );

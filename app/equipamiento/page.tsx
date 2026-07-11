@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { FloatingWidgets } from "../components/FloatingWidgets";
+import { Footer } from "../components/Footer";
 import { Icon } from "../components/Icon";
 import { Navbar } from "../components/Navbar";
 import { Reveal } from "../components/Reveal";
@@ -109,6 +110,7 @@ export default function EquipamientoPage() {
           </div>
         </Reveal>
       </main>
+      <Footer />
       <FloatingWidgets />
     </div>
   );
