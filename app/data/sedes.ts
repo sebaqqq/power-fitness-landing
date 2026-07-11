@@ -3,6 +3,14 @@
 // correcta pero no necesariamente frente al local. Validar contra Google Maps.
 export type SedeStatus = "abierta" | "preventa" | "espera";
 
+export type Horario = {
+  lunesViernes: string;
+  sabado: string;
+  /** null = sin atención los domingos */
+  domingo: string | null;
+  festivos: string;
+};
+
 export type Sede = {
   id: string;
   name: string;
@@ -11,6 +19,8 @@ export type Sede = {
   status: SedeStatus;
   lat: number;
   lng: number;
+  /** null = horarios aún no publicados (lista de espera) */
+  horario: Horario | null;
   geoAprox?: boolean;
 };
 
@@ -19,6 +29,20 @@ export const statusLabels: Record<SedeStatus, string> = {
   preventa: "En preventa",
   espera: "Próximamente · Lista de espera",
 };
+
+// Horario base compartido por todas las sedes operativas y en preventa;
+// solo cambia la atención de los domingos.
+const horarioGeneral: Horario = {
+  lunesViernes: "06:00 – 23:00",
+  sabado: "09:00 – 21:00",
+  domingo: null,
+  festivos: "09:00 – 14:00",
+};
+
+const conDomingo = (domingo: string): Horario => ({
+  ...horarioGeneral,
+  domingo,
+});
 
 export const sedes: Sede[] = [
   // Sedes abiertas
@@ -30,6 +54,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.611302,
     lng: -70.901439,
+    horario: conDomingo("09:00 – 16:00"),
     geoAprox: true,
   },
   {
@@ -40,6 +65,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.600225,
     lng: -70.870115,
+    horario: conDomingo("09:00 – 14:00"),
     geoAprox: true,
   },
   {
@@ -50,6 +76,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.660784,
     lng: -70.925444,
+    horario: conDomingo("09:00 – 16:00"),
     geoAprox: true,
   },
   {
@@ -60,6 +87,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.685549,
     lng: -71.104148,
+    horario: conDomingo("09:00 – 16:00"),
     geoAprox: true,
   },
   {
@@ -70,6 +98,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.587663,
     lng: -70.837242,
+    horario: conDomingo("09:00 – 16:00"),
     geoAprox: true,
   },
   {
@@ -80,6 +109,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.569743,
     lng: -71.207068,
+    horario: horarioGeneral,
     geoAprox: true,
   },
   {
@@ -90,6 +120,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.577068,
     lng: -71.604061,
+    horario: horarioGeneral,
     geoAprox: true,
   },
   {
@@ -100,6 +131,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.460649,
     lng: -70.600119,
+    horario: horarioGeneral,
   },
   {
     id: "merced",
@@ -109,6 +141,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.438363,
     lng: -70.64887,
+    horario: horarioGeneral,
   },
   {
     id: "chacabuco",
@@ -118,6 +151,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.439919,
     lng: -70.678656,
+    horario: horarioGeneral,
   },
   {
     id: "carmen",
@@ -127,6 +161,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.460476,
     lng: -70.638875,
+    horario: horarioGeneral,
   },
   {
     id: "lord-cochrane",
@@ -136,6 +171,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.453178,
     lng: -70.654077,
+    horario: horarioGeneral,
   },
   {
     id: "irarrazaval",
@@ -145,6 +181,7 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.453564,
     lng: -70.622384,
+    horario: horarioGeneral,
     geoAprox: true,
   },
   {
@@ -155,8 +192,9 @@ export const sedes: Sede[] = [
     status: "abierta",
     lat: -33.485935,
     lng: -70.599597,
+    horario: horarioGeneral,
   },
-  // Sedes en preventa (Reñaca)
+  // Sedes en preventa (Reñaca) — horario vigente desde la inauguración
   {
     id: "renaca-1",
     name: "Reñaca 1",
@@ -165,6 +203,7 @@ export const sedes: Sede[] = [
     status: "preventa",
     lat: -32.95666,
     lng: -71.543224,
+    horario: horarioGeneral,
   },
   {
     id: "renaca-2",
@@ -174,8 +213,9 @@ export const sedes: Sede[] = [
     status: "preventa",
     lat: -32.968971,
     lng: -71.545034,
+    horario: horarioGeneral,
   },
-  // Próximamente (lista de espera)
+  // Próximamente (lista de espera) — sin horarios publicados
   {
     id: "quillota",
     name: "Quillota",
@@ -184,6 +224,7 @@ export const sedes: Sede[] = [
     status: "espera",
     lat: -32.879919,
     lng: -71.248077,
+    horario: null,
     geoAprox: true,
   },
   {
@@ -194,6 +235,7 @@ export const sedes: Sede[] = [
     status: "espera",
     lat: -33.045612,
     lng: -71.43817,
+    horario: null,
   },
   {
     id: "linares",
@@ -203,6 +245,7 @@ export const sedes: Sede[] = [
     status: "espera",
     lat: -35.846912,
     lng: -71.591162,
+    horario: null,
     geoAprox: true,
   },
   {
@@ -213,6 +256,7 @@ export const sedes: Sede[] = [
     status: "espera",
     lat: -33.753344,
     lng: -70.907542,
+    horario: null,
   },
 ];
 

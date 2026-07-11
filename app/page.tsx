@@ -282,7 +282,7 @@ export default function Home() {
           title="ENCUENTRA TU POWER FITNESS MÁS CERCANO."
           right={
             <a
-              href="#"
+              href="/sedes"
               className="flex items-center gap-2.5 rounded-lg border border-foreground/40 px-6 py-3.5 text-sm font-semibold tracking-wide transition-colors duration-200 hover:border-foreground hover:bg-foreground/5"
             >
               <Icon name="map" size={17} className="text-accent" />

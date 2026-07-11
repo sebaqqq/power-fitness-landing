@@ -14,7 +14,10 @@ export type IconName =
   | "instagram"
   | "facebook"
   | "menu"
-  | "close";
+  | "close"
+  | "navigation"
+  | "chevron-right"
+  | "clock";
 
 const paths: Record<IconName, JSX.Element> = {
   user: (
@@ -96,6 +99,14 @@ const paths: Record<IconName, JSX.Element> = {
     <>
       <path d="M18 6 6 18" />
       <path d="m6 6 12 12" />
+    </>
+  ),
+  navigation: <polygon points="3 11 22 2 13 21 11 13 3 11" />,
+  "chevron-right": <path d="m9 18 6-6-6-6" />,
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
     </>
   ),
 };

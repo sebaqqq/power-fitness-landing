@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Icon } from "./Icon";
 
 const links = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Sedes", href: "#sedes" },
-  { label: "Planes", href: "#planes" },
-  { label: "Convenios", href: "#convenios" },
-  { label: "Equipamiento", href: "#equipamiento" },
+  { label: "Inicio", href: "/#inicio" },
+  { label: "Sedes", href: "/sedes" },
+  { label: "Planes", href: "/#planes" },
+  { label: "Convenios", href: "/#convenios" },
+  { label: "Equipamiento", href: "/#equipamiento" },
 ];
 
 export function Navbar() {
@@ -36,7 +37,7 @@ export function Navbar() {
           scrolled ? "py-3" : "py-5"
         }`}
       >
-        <a href="#inicio" aria-label="Power Fitness Chile — Inicio">
+        <Link href="/#inicio" aria-label="Power Fitness Chile — Inicio">
           <Image
             src="/logo.png"
             alt="Power Fitness Chile"
@@ -47,17 +48,17 @@ export function Navbar() {
               scrolled ? "h-11" : "h-14"
             }`}
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-8 lg:flex">
           {links.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-[15px] font-medium text-muted transition-colors duration-200 hover:text-foreground"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -75,12 +76,12 @@ export function Navbar() {
           >
             <Icon name="cart" size={19} />
           </button>
-          <a
-            href="#planes"
+          <Link
+            href="/#planes"
             className="btn-sheen hidden rounded-lg bg-accent px-5 py-2.5 text-sm font-bold tracking-wide text-white transition-transform duration-200 hover:scale-[1.03] active:scale-95 sm:block"
           >
             ¡INSCRÍBETE AHORA!
-          </a>
+          </Link>
           <button
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={open}
@@ -101,23 +102,23 @@ export function Navbar() {
           <ul className="flex flex-col gap-1 px-6 py-4">
             {links.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="block rounded-lg px-3 py-2.5 font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a
-                href="#planes"
+              <Link
+                href="/#planes"
                 onClick={() => setOpen(false)}
                 className="mt-2 block rounded-lg bg-accent px-3 py-2.5 text-center font-bold text-white"
               >
                 ¡INSCRÍBETE AHORA!
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

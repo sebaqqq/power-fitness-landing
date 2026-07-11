@@ -153,6 +153,12 @@ body {
   background: var(--muted-2);
 }
 
+.sede-pin--selected {
+  box-shadow:
+    0 0 0 4px rgba(255, 46, 196, 0.35),
+    0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
 .map-dark .leaflet-popup-content-wrapper,
 .map-dark .leaflet-popup-tip {
   background: var(--surface-2);
