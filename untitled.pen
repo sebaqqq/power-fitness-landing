@@ -3,18 +3,6 @@
   "children": [
     {
       "type": "frame",
-      "id": "bi8Au",
-      "x": 0,
-      "y": 0,
-      "name": "Frame",
-      "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
-    },
-    {
-      "type": "frame",
       "id": "TSAXF",
       "x": 960,
       "y": 0,
@@ -3072,6 +3060,1958 @@
       "width": 380,
       "height": 170,
       "content": "Interacciones sugeridas\n\nNavbar fijo con fondo translúcido al hacer scroll. Reveal on scroll suave por sección, hover con elevación leve en cards de planes y sedes. Contadores 14/2 animados. Respetar prefers-reduced-motion."
+    },
+    {
+      "type": "frame",
+      "id": "j8bVwx",
+      "x": 960,
+      "y": -160,
+      "name": "Sede Row",
+      "reusable": true,
+      "width": 430,
+      "fill": "$surface",
+      "cornerRadius": "$radius-sm",
+      "stroke": "$border",
+      "strokeWidth": 1,
+      "gap": 12,
+      "padding": [
+        14,
+        18
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BKteF",
+          "name": "Row Left",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "h1CMEY",
+              "name": "Status Dot",
+              "fill": "$accent",
+              "width": 10,
+              "height": 10
+            },
+            {
+              "type": "frame",
+              "id": "z6YNk7",
+              "name": "Row Info",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Gsg3P",
+                  "name": "Row Name",
+                  "fill": "$text",
+                  "content": "Vicuña Mackenna",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "HQOuS",
+                  "name": "Row Address",
+                  "fill": "$text-3",
+                  "content": "Av. Vicuña Mackenna #2996, Peñaflor",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12.5,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "icon",
+          "id": "qDN6G",
+          "name": "Row Chevron",
+          "width": 16,
+          "height": 16,
+          "icon": "chevron-right",
+          "library": "lucide",
+          "fill": "$text-3"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "m4sWbV",
+      "x": 2980,
+      "y": -160,
+      "name": "Power Fitness — Sedes y Horarios",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "jaAv3",
+          "name": "Navbar",
+          "width": "fill_container",
+          "fill": "#0E0E10F2",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            20,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "e51dTy",
+              "name": "Logo",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Xkls0",
+                  "name": "Logo Power",
+                  "fill": "$text",
+                  "content": "POWER",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "tRWnZ",
+                  "name": "Logo Fitness",
+                  "fill": "$accent",
+                  "content": "FITNESS",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OzJuL",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y4euKh",
+                  "name": "Link Inicio",
+                  "fill": "$text-2",
+                  "content": "Inicio",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "HuqHl",
+                  "name": "Link Sedes",
+                  "fill": "$text-2",
+                  "content": "Sedes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "cdlaV",
+                  "name": "Link Planes",
+                  "fill": "$text-2",
+                  "content": "Planes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "yx8qQ",
+                  "name": "Link Convenios",
+                  "fill": "$text-2",
+                  "content": "Convenios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Q9p1V7",
+                  "name": "Link Equipamiento",
+                  "fill": "$text-2",
+                  "content": "Equipamiento",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R26cy",
+              "name": "Nav Right",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "f2W8Z",
+                  "name": "Icon User",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "user",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "icon",
+                  "id": "cSMkX",
+                  "name": "Icon Cart",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "shopping-cart",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "frame",
+                  "id": "WOohi",
+                  "name": "Nav CTA",
+                  "fill": "$accent",
+                  "cornerRadius": "$radius-sm",
+                  "padding": [
+                    11,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y8KzWw",
+                      "name": "Nav CTA Label",
+                      "fill": "#FFFFFF",
+                      "content": "¡INSCRÍBETE AHORA!",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kZh7v",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            120,
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "B6UoA",
+              "name": "Header Top",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Aqy2p",
+                  "name": "Eyebrow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Xbu8P",
+                      "name": "Eyebrow Bar",
+                      "fill": "$accent",
+                      "width": 36,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q5dhT",
+                      "name": "Eyebrow Label",
+                      "fill": "$text-2",
+                      "content": "NUESTRAS SEDES",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "IXJUJ",
+                  "name": "H1",
+                  "fill": "$text",
+                  "content": "SEDES Y HORARIOS.",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 52,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "p8s0UF",
+                  "name": "Subtitle",
+                  "fill": "$text-2",
+                  "content": "Elige tu sede para ver su dirección, horarios de atención y cómo llegar.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RvCc3",
+              "name": "Filter Chips",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zkPlP",
+                  "name": "Chip Todas",
+                  "fill": "$accent",
+                  "cornerRadius": 100,
+                  "stroke": "$accent",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Kov86",
+                      "name": "Chip Todas Label",
+                      "fill": "#FFFFFF",
+                      "content": "TODAS (20)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l9A5Y",
+                  "name": "Chip ABIERTAS (14)",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "FQC3B",
+                      "name": "Chip Dot",
+                      "fill": "$accent",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "k1Pph",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "ABIERTAS (14)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lsDkT",
+                  "name": "Chip PREVENTA (2)",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "uGJqm",
+                      "name": "Chip Dot",
+                      "fill": "$text",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "HuEfw",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "PREVENTA (2)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v6Ob6",
+                  "name": "Chip LISTA DE ESPERA (4)",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "VbOQe",
+                      "name": "Chip Dot",
+                      "fill": "$text-3",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "IFxdZ",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "LISTA DE ESPERA (4)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "k0oEv",
+          "name": "Content",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            0,
+            120,
+            96,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "PlOlw",
+              "name": "Lista Sedes",
+              "width": 430,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qs2oA",
+                  "name": "Grupo ABIERTAS (14)",
+                  "gap": 10,
+                  "padding": [
+                    10,
+                    2,
+                    4,
+                    2
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "KYT2Q",
+                      "name": "Grupo Bar",
+                      "fill": "$accent",
+                      "width": 24,
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Abs9N",
+                      "name": "Grupo Label",
+                      "fill": "$text-2",
+                      "content": "ABIERTAS (14)",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "VCIIA",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Vicuña Mackenna",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Vicuña Mackenna"
+                    },
+                    "HQOuS": {
+                      "content": "Av. Vicuña Mackenna #2996, Peñaflor"
+                    }
+                  }
+                },
+                {
+                  "id": "V5bXJ",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Miraflores",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Miraflores"
+                    },
+                    "HQOuS": {
+                      "content": "Miraflores #936, Peñaflor"
+                    }
+                  }
+                },
+                {
+                  "id": "lEPVu",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Talagante",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Talagante"
+                    },
+                    "HQOuS": {
+                      "content": "Lucas Pacheco #869, Talagante"
+                    }
+                  }
+                },
+                {
+                  "id": "GsAMy",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede El Monte",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "El Monte"
+                    },
+                    "HQOuS": {
+                      "content": "Av. Los Libertadores #581, El Monte"
+                    }
+                  }
+                },
+                {
+                  "id": "AuDfX",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Padre Hurtado",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Padre Hurtado"
+                    },
+                    "HQOuS": {
+                      "content": "Camino a Melipilla #2830, Padre Hurtado"
+                    }
+                  }
+                },
+                {
+                  "id": "ySjot",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Bollenar",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Bollenar"
+                    },
+                    "HQOuS": {
+                      "content": "Anselmo Alarcón #1232, Bollenar"
+                    }
+                  }
+                },
+                {
+                  "id": "RHrjZ",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede San Antonio",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "San Antonio"
+                    },
+                    "HQOuS": {
+                      "content": "Centenario #396, San Antonio"
+                    }
+                  }
+                },
+                {
+                  "id": "M4izJ",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Exequiel",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Exequiel"
+                    },
+                    "HQOuS": {
+                      "content": "Exequiel Fernández #653, Ñuñoa"
+                    }
+                  }
+                },
+                {
+                  "id": "dD82e",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Merced",
+                  "width": "fill_container",
+                  "fill": "$surface-2",
+                  "stroke": "$accent",
+                  "strokeWidth": 1.5,
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Merced"
+                    },
+                    "HQOuS": {
+                      "content": "Merced #838, piso -1, Santiago"
+                    }
+                  }
+                },
+                {
+                  "id": "vcBRU",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Chacabuco",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Chacabuco"
+                    },
+                    "HQOuS": {
+                      "content": "Chacabuco #511, Santiago"
+                    }
+                  }
+                },
+                {
+                  "id": "hM9sW",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Carmen",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Carmen"
+                    },
+                    "HQOuS": {
+                      "content": "Carmen #1291, Santiago"
+                    }
+                  }
+                },
+                {
+                  "id": "slASs",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Lord Cochrane",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Lord Cochrane"
+                    },
+                    "HQOuS": {
+                      "content": "Lord Cochrane #568, Santiago"
+                    }
+                  }
+                },
+                {
+                  "id": "O52SbG",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Irarrázaval",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Irarrázaval"
+                    },
+                    "HQOuS": {
+                      "content": "Irarrázaval #4938, Ñuñoa"
+                    }
+                  }
+                },
+                {
+                  "id": "fDnzW",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Macul",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$accent"
+                    },
+                    "Gsg3P": {
+                      "content": "Macul"
+                    },
+                    "HQOuS": {
+                      "content": "Av. Macul #3403, Macul"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "ca0X1",
+                  "name": "Grupo EN PREVENTA · REÑACA",
+                  "gap": 10,
+                  "padding": [
+                    10,
+                    2,
+                    4,
+                    2
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "pIqPP",
+                      "name": "Grupo Bar",
+                      "fill": "$accent",
+                      "width": 24,
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "K1GxVR",
+                      "name": "Grupo Label",
+                      "fill": "$text-2",
+                      "content": "EN PREVENTA · REÑACA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "aFZBT",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Reñaca 1",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text"
+                    },
+                    "Gsg3P": {
+                      "content": "Reñaca 1"
+                    },
+                    "HQOuS": {
+                      "content": "Los Mirlos #181, Reñaca"
+                    }
+                  }
+                },
+                {
+                  "id": "vjLmI",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Reñaca 2",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text"
+                    },
+                    "Gsg3P": {
+                      "content": "Reñaca 2"
+                    },
+                    "HQOuS": {
+                      "content": "Av. Borgoño #14912, Reñaca"
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "cgLbr",
+                  "name": "Grupo PRÓXIMAMENTE · LISTA DE ESPERA",
+                  "gap": 10,
+                  "padding": [
+                    10,
+                    2,
+                    4,
+                    2
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "nrWB5",
+                      "name": "Grupo Bar",
+                      "fill": "$accent",
+                      "width": 24,
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "mZVuu",
+                      "name": "Grupo Label",
+                      "fill": "$text-2",
+                      "content": "PRÓXIMAMENTE · LISTA DE ESPERA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "yLXJv",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Quillota",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text-3"
+                    },
+                    "Gsg3P": {
+                      "content": "Quillota"
+                    },
+                    "HQOuS": {
+                      "content": "San Martín #801, Quillota"
+                    }
+                  }
+                },
+                {
+                  "id": "TULT8",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Quilpué",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text-3"
+                    },
+                    "Gsg3P": {
+                      "content": "Quilpué"
+                    },
+                    "HQOuS": {
+                      "content": "Zenteno #741-749, Quilpué"
+                    }
+                  }
+                },
+                {
+                  "id": "JojOM",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Linares",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text-3"
+                    },
+                    "Gsg3P": {
+                      "content": "Linares"
+                    },
+                    "HQOuS": {
+                      "content": "Av. Brasil #93, Linares"
+                    }
+                  }
+                },
+                {
+                  "id": "LJTks",
+                  "type": "ref",
+                  "ref": "j8bVwx",
+                  "name": "Sede Isla de Maipo",
+                  "width": "fill_container",
+                  "descendants": {
+                    "h1CMEY": {
+                      "fill": "$text-3"
+                    },
+                    "Gsg3P": {
+                      "content": "Isla de Maipo"
+                    },
+                    "HQOuS": {
+                      "content": "Izaga #1133, Isla de Maipo"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rnYSU",
+              "name": "Panel Derecho",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Wa2WH",
+                  "name": "Mapa Sedes",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 460,
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "lnkVf",
+                      "x": 150,
+                      "y": 0,
+                      "name": "Grid V",
+                      "fill": "#2A2A3266",
+                      "width": 1,
+                      "height": 460
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "VdXwd",
+                      "x": 300,
+                      "y": 0,
+                      "name": "Grid V",
+                      "fill": "#2A2A3266",
+                      "width": 1,
+                      "height": 460
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "u55TMN",
+                      "x": 450,
+                      "y": 0,
+                      "name": "Grid V",
+                      "fill": "#2A2A3266",
+                      "width": 1,
+                      "height": 460
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "a2W44",
+                      "x": 600,
+                      "y": 0,
+                      "name": "Grid V",
+                      "fill": "#2A2A3266",
+                      "width": 1,
+                      "height": 460
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "ZSFt6",
+                      "x": 0,
+                      "y": 115,
+                      "name": "Grid H",
+                      "fill": "#2A2A3266",
+                      "width": 738,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "jn9fi",
+                      "x": 0,
+                      "y": 230,
+                      "name": "Grid H",
+                      "fill": "#2A2A3266",
+                      "width": 738,
+                      "height": 1
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "hS8cO",
+                      "x": 0,
+                      "y": 345,
+                      "name": "Grid H",
+                      "fill": "#2A2A3266",
+                      "width": 738,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "OJePz",
+                      "x": 28,
+                      "y": 24,
+                      "name": "Map Label",
+                      "fill": "$text-3",
+                      "content": "MAPA DE SEDES · ZONA CENTRO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "H4n8vx",
+                      "x": 118,
+                      "y": 58,
+                      "name": "Pin Reñaca 1",
+                      "fill": "$text",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "UCzIy",
+                      "x": 112,
+                      "y": 76,
+                      "name": "Pin Reñaca 2",
+                      "fill": "$text",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "gUlJk",
+                      "x": 196,
+                      "y": 38,
+                      "name": "Pin Quillota",
+                      "fill": "$text-3",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "cIbYR",
+                      "x": 168,
+                      "y": 98,
+                      "name": "Pin Quilpué",
+                      "fill": "$text-3",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "evXdA",
+                      "x": 120,
+                      "y": 238,
+                      "name": "Pin San Antonio",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "i444k",
+                      "x": 448,
+                      "y": 146,
+                      "name": "Pin Chacabuco",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "XDraw",
+                      "x": 462,
+                      "y": 170,
+                      "name": "Pin Lord Cochrane",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "JgQJw",
+                      "x": 478,
+                      "y": 184,
+                      "name": "Pin Carmen",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "V3Q6O",
+                      "x": 504,
+                      "y": 166,
+                      "name": "Pin Exequiel",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "C9c6iD",
+                      "x": 518,
+                      "y": 152,
+                      "name": "Pin Irarrázaval",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "hPfzz",
+                      "x": 502,
+                      "y": 192,
+                      "name": "Pin Macul",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "IMwUb",
+                      "x": 408,
+                      "y": 200,
+                      "name": "Pin Padre Hurtado",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "Zwjx6",
+                      "x": 396,
+                      "y": 214,
+                      "name": "Pin Vicuña Mackenna",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "pUFel",
+                      "x": 406,
+                      "y": 226,
+                      "name": "Pin Miraflores",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "NxB2h",
+                      "x": 388,
+                      "y": 240,
+                      "name": "Pin Talagante",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "hGIEi",
+                      "x": 352,
+                      "y": 252,
+                      "name": "Pin El Monte",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "Hwh7k",
+                      "x": 318,
+                      "y": 224,
+                      "name": "Pin Bollenar",
+                      "fill": "$accent",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "iz3cT",
+                      "x": 402,
+                      "y": 296,
+                      "name": "Pin Isla de Maipo",
+                      "fill": "$text-3",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "B6EKiz",
+                      "x": 500,
+                      "y": 400,
+                      "name": "Pin Linares",
+                      "fill": "$text-3",
+                      "width": 12,
+                      "height": 12,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "b4hgJH",
+                      "x": 458,
+                      "y": 138,
+                      "name": "Pin Merced Ring",
+                      "fill": "#FF2EC400",
+                      "width": 32,
+                      "height": 32,
+                      "stroke": "$accent",
+                      "strokeWidth": 1.5
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "CLqaB",
+                      "x": 466,
+                      "y": 146,
+                      "name": "Pin Merced",
+                      "fill": "$accent",
+                      "width": 16,
+                      "height": 16,
+                      "stroke": "$bg",
+                      "strokeWidth": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dy2sp",
+                      "x": 498,
+                      "y": 104,
+                      "name": "Tooltip Merced",
+                      "fill": "$surface-2",
+                      "cornerRadius": "$radius-sm",
+                      "stroke": "$accent",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 2,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sMEaD",
+                          "name": "Tooltip Name",
+                          "fill": "$text",
+                          "content": "Sede Merced",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13.5,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "M0Ltj",
+                          "name": "Tooltip Addr",
+                          "fill": "$text-2",
+                          "content": "Merced #838 · Santiago",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N6xeOy",
+                      "x": 24,
+                      "y": 408,
+                      "name": "Legend",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Kir5p",
+                          "name": "Legend Abiertas (14)",
+                          "fill": "#0E0E10D9",
+                          "cornerRadius": 100,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "padding": [
+                            7,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "fKkkH",
+                              "name": "Legend Dot",
+                              "fill": "$accent",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "yXNqW",
+                              "name": "Legend Label",
+                              "fill": "$text-2",
+                              "content": "Abiertas (14)",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XzZPS",
+                          "name": "Legend Preventa (2)",
+                          "fill": "#0E0E10D9",
+                          "cornerRadius": 100,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "padding": [
+                            7,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "op04X",
+                              "name": "Legend Dot",
+                              "fill": "$text",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "ofpeH",
+                              "name": "Legend Label",
+                              "fill": "$text-2",
+                              "content": "Preventa (2)",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "n3AoPg",
+                          "name": "Legend Lista de espera (4)",
+                          "fill": "#0E0E10D9",
+                          "cornerRadius": 100,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "gap": 8,
+                          "padding": [
+                            7,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "QP2cD",
+                              "name": "Legend Dot",
+                              "fill": "$text-3",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "xc5Tq",
+                              "name": "Legend Label",
+                              "fill": "$text-2",
+                              "content": "Lista de espera (4)",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12.5,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q4ruf",
+                  "name": "Detalle Sede",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 22,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ln72u",
+                      "name": "Detalle Head",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lGmil",
+                          "name": "Detalle Head Left",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LWgCf",
+                              "name": "Detalle Title",
+                              "fill": "$text",
+                              "content": "SEDE MERCED",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 30,
+                              "fontWeight": "800",
+                              "letterSpacing": 0.5
+                            },
+                            {
+                              "type": "frame",
+                              "id": "dnKzo",
+                              "name": "Detalle Addr",
+                              "gap": 8,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "w9lfv",
+                                  "name": "Addr Pin",
+                                  "width": 15,
+                                  "height": 15,
+                                  "icon": "map-pin",
+                                  "library": "lucide",
+                                  "fill": "$accent"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "aNvwa",
+                                  "name": "Addr Text",
+                                  "fill": "$text-2",
+                                  "content": "Merced #838, piso -1, Edif. Casa Colorada, Santiago",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GuOTA",
+                          "name": "Badge Abierta",
+                          "fill": "$accent",
+                          "cornerRadius": 100,
+                          "padding": [
+                            6,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "E17Xb",
+                              "name": "Badge Label",
+                              "fill": "#FFFFFF",
+                              "content": "ABIERTA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "lraik",
+                      "name": "Divider",
+                      "fill": "$border",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WDU8X",
+                      "name": "Horario Head",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lgDyV",
+                          "name": "Horario Label",
+                          "fill": "$text-3",
+                          "content": "HORARIO DE ATENCIÓN",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12.5,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "L4lq1O",
+                          "name": "Tag Por Confirmar",
+                          "fill": "#FF2EC41F",
+                          "cornerRadius": 100,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lFu4s",
+                              "name": "Tag Label",
+                              "fill": "$accent",
+                              "content": "POR CONFIRMAR",
+                              "fontFamily": "$font-body",
+                              "fontSize": 10.5,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gzcnW",
+                      "name": "Horario Tabla",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "H9Fcf2",
+                          "name": "Fila Lunes a viernes",
+                          "width": "fill_container",
+                          "stroke": "$border",
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "padding": [
+                            14,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "n7LAW",
+                              "name": "Celda Día",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "lpXG2",
+                                  "name": "Día",
+                                  "fill": "$text-2",
+                                  "content": "Lunes a viernes",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ubnVK",
+                              "name": "Celda Hora",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "U9JTxS",
+                                  "name": "Hora",
+                                  "fill": "$text",
+                                  "content": "06:00 – 23:00",
+                                  "fontFamily": "$font-mono",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LE2lU",
+                          "name": "Fila Sábado",
+                          "width": "fill_container",
+                          "stroke": "$border",
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "padding": [
+                            14,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "fB0wj",
+                              "name": "Celda Día",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mT1xR",
+                                  "name": "Día",
+                                  "fill": "$text-2",
+                                  "content": "Sábado",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vM3Ra",
+                              "name": "Celda Hora",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "yBEUD",
+                                  "name": "Hora",
+                                  "fill": "$text",
+                                  "content": "08:00 – 20:00",
+                                  "fontFamily": "$font-mono",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "a940u",
+                          "name": "Fila Domingo y feriados",
+                          "width": "fill_container",
+                          "padding": [
+                            14,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cZUdW",
+                              "name": "Celda Día",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "v6iGX",
+                                  "name": "Día",
+                                  "fill": "$text-2",
+                                  "content": "Domingo y feriados",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "n4Z6y",
+                              "name": "Celda Hora",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "D2p1m",
+                                  "name": "Hora",
+                                  "fill": "$text",
+                                  "content": "09:00 – 14:00",
+                                  "fontFamily": "$font-mono",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "T0p3er",
+                      "name": "Horario Nota",
+                      "fill": "$text-3",
+                      "content": "* Horarios referenciales. Se actualizarán con la información oficial de cada sede.",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12.5,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ukP3M",
+                      "name": "Detalle CTAs",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "A1xi2",
+                          "name": "CTA Cómo Llegar",
+                          "cornerRadius": "$radius-sm",
+                          "stroke": "#F5F5F766",
+                          "strokeWidth": 1,
+                          "gap": 10,
+                          "padding": [
+                            14,
+                            24
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "lCpJX",
+                              "name": "CTA Nav Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "navigation",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "pgYzR",
+                              "name": "CTA1 Label",
+                              "fill": "$text",
+                              "content": "CÓMO LLEGAR",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "d6mLPq",
+                          "name": "CTA Inscríbete",
+                          "fill": "$accent",
+                          "cornerRadius": "$radius-sm",
+                          "padding": [
+                            14,
+                            28
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vT0U9",
+                              "name": "CTA2 Label",
+                              "fill": "#FFFFFF",
+                              "content": "INSCRÍBETE EN ESTA SEDE",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "700",
+                              "letterSpacing": 0.5
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "A0VOSv",
+                  "name": "Card Lista Espera",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "padding": [
+                    22,
+                    28
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ls21b",
+                      "name": "Wait Left",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sFaw3",
+                          "name": "Wait Title",
+                          "fill": "$text",
+                          "content": "¿TU SEDE AÚN NO ABRE?",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20,
+                          "fontWeight": "800",
+                          "letterSpacing": 0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "n9mz3D",
+                          "name": "Wait Sub",
+                          "fill": "$text-2",
+                          "content": "Inscríbete en la lista de espera y te avisamos apenas abra.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13.5,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "O6vjP9",
+                      "name": "Wait CTA",
+                      "cornerRadius": "$radius-sm",
+                      "stroke": "#F5F5F766",
+                      "strokeWidth": 1,
+                      "padding": [
+                        12,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B25gam",
+                          "name": "Wait CTA Label",
+                          "fill": "$text",
+                          "content": "UNIRME A LA LISTA",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13.5,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "id": "o01I2",
+      "x": 4500,
+      "y": -160,
+      "name": "Nota: Vista Sedes y Horarios",
+      "width": 380,
+      "height": 220,
+      "content": "Vista Sedes y Horarios (abre desde 'Ver mapa y horarios')\n\nClick en una sede de la lista selecciona el pin en el mapa y actualiza el panel de horarios. Filtros por estado arriba.\n\nVALIDAR: los horarios son referenciales, pendiente que negocio entregue los oficiales por sede. Direcciones oficiales cargadas 2026-07-11 (mismas de app/data/sedes.ts)."
     }
   ],
   "variables": {
