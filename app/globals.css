@@ -177,27 +177,28 @@ body {
   font-size: 15px;
 }
 
-.sede-popup > span {
+.sede-popup .sede-popup-address {
   color: var(--muted);
 }
 
-.sede-popup-status {
+.sede-popup .sede-popup-status {
   font-weight: 600;
 }
 
-.sede-popup-status--abierta {
+.sede-popup .sede-popup-status--abierta {
   color: var(--accent);
 }
 
-.sede-popup-status--preventa {
+.sede-popup .sede-popup-status--preventa {
   color: var(--foreground);
 }
 
-.sede-popup-status--espera {
+.sede-popup .sede-popup-status--espera {
   color: var(--muted-2);
 }
 
-.sede-popup a {
+/* .map-dark para ganarle en especificidad a `.leaflet-container a` */
+.map-dark .sede-popup a {
   margin-top: 4px;
   color: var(--accent);
   font-weight: 600;

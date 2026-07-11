@@ -12,7 +12,7 @@ function popupHtml(sede: Sede) {
   return `
     <div class="sede-popup">
       <strong>Sede ${sede.name}</strong>
-      <span>${sede.address}, ${sede.comuna}</span>
+      <span class="sede-popup-address">${sede.address}, ${sede.comuna}</span>
       <span class="sede-popup-status sede-popup-status--${sede.status}">${statusLabels[sede.status]}</span>
       <a href="https://www.google.com/maps/search/?api=1&query=${query}" target="_blank" rel="noopener noreferrer">Cómo llegar →</a>
     </div>`;
