@@ -10,7 +10,7 @@ const links = [
   { label: "Sedes", href: "/sedes" },
   { label: "Planes", href: "/#planes" },
   { label: "Convenios", href: "/#convenios" },
-  { label: "Equipamiento", href: "/#equipamiento" },
+  { label: "Equipamiento", href: "/equipamiento" },
 ];
 
 export function Navbar() {

@@ -5,7 +5,7 @@ import { Icon, type IconName } from "./components/Icon";
 import { Navbar } from "./components/Navbar";
 import { Reveal } from "./components/Reveal";
 import { SedesMap } from "./components/SedesMap";
-import { sedesAbiertas, sedesEspera, sedesPreventa } from "./data/sedes";
+import { sedesEspera, sedesPreventa } from "./data/sedes";
 
 const servicios: { icon: IconName; title: string; text: string }[] = [
   {
@@ -294,78 +294,6 @@ export default function Home() {
         <Reveal className="mt-12">
           <SedesMap />
         </Reveal>
-
-        <Reveal className="mt-12 flex items-center gap-3">
-          <span className="h-1 w-6 bg-accent" />
-          <h3 className="text-sm font-semibold tracking-[0.2em] text-muted">
-            SEDES ABIERTAS
-          </h3>
-        </Reveal>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {sedesAbiertas.map((sede, i) => (
-            <Reveal key={sede.id} delay={(i % 4) * 80}>
-              <div className="flex h-full flex-col gap-1.5 rounded-xl border border-line bg-surface px-5 py-4 transition duration-300 hover:-translate-y-1 hover:border-accent/60">
-                <div className="flex items-center gap-2.5">
-                  <Icon name="map-pin" size={16} className="shrink-0 text-accent" />
-                  <span className="font-semibold">{sede.name}</span>
-                </div>
-                <span className="pl-[26px] text-sm text-muted-2">
-                  {sede.address}, {sede.comuna}
-                </span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal className="mt-12 flex items-center gap-3">
-          <span className="h-1 w-6 bg-accent" />
-          <h3 className="text-sm font-semibold tracking-[0.2em] text-muted">
-            SEDES EN PREVENTA · REÑACA
-          </h3>
-        </Reveal>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {sedesPreventa.map((sede, i) => (
-            <Reveal key={sede.id} delay={(i % 4) * 80}>
-              <div className="flex h-full flex-col gap-1.5 rounded-xl border border-line bg-surface px-5 py-4 transition duration-300 hover:-translate-y-1 hover:border-accent/60">
-                <div className="flex items-center gap-2.5">
-                  <Icon name="map-pin" size={16} className="shrink-0 text-accent" />
-                  <span className="font-semibold">{sede.name}</span>
-                  <span className="ml-auto rounded-full bg-accent px-2.5 py-1 text-[11px] font-bold tracking-wide text-white">
-                    PREVENTA
-                  </span>
-                </div>
-                <span className="pl-[26px] text-sm text-muted-2">
-                  {sede.address}, {sede.comuna}
-                </span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal className="mt-12 flex items-center gap-3">
-          <span className="h-1 w-6 bg-accent" />
-          <h3 className="text-sm font-semibold tracking-[0.2em] text-muted">
-            PRÓXIMAMENTE · LISTA DE ESPERA
-          </h3>
-        </Reveal>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {sedesEspera.map((sede, i) => (
-            <Reveal key={sede.id} delay={(i % 4) * 80}>
-              <div className="flex h-full flex-col gap-1.5 rounded-xl border border-line bg-surface px-5 py-4 opacity-80 transition duration-300 hover:-translate-y-1 hover:border-accent/60">
-                <div className="flex items-center gap-2.5">
-                  <Icon name="timer" size={16} className="shrink-0 text-accent" />
-                  <span className="font-semibold text-muted-2">{sede.name}</span>
-                  <span className="ml-auto rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-bold tracking-wide text-accent">
-                    PRONTO
-                  </span>
-                </div>
-                <span className="pl-[26px] text-sm text-muted-2">
-                  {sede.address}, {sede.comuna}
-                </span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
       </section>
 
       {/* Convenios */}
@@ -451,6 +379,7 @@ export default function Home() {
                   ["Sedes", "#sedes"],
                   ["Planes", "#planes"],
                   ["Convenios", "#convenios"],
+                  ["Equipamiento", "/equipamiento"],
                   ["Política de Privacidad", "#"],
                   ["Términos y Condiciones", "#"],
                 ].map(([label, href]) => (
