@@ -1,26 +1,233 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0e0e10;
+  --surface: #17171b;
+  --surface-2: #1e1e24;
+  --border: #2a2a32;
+  --foreground: #f5f5f7;
+  --muted: #9c9ca6;
+  --muted-2: #63636d;
+  --accent: #ff2ec4;
+  --whatsapp: #25d366;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-accent: var(--accent);
+  --color-whatsapp: var(--whatsapp);
+  --font-sans: var(--font-barlow);
+  --font-heading: var(--font-barlow-condensed);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-barlow), sans-serif;
+}
+
+/* Entrada del hero al cargar */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+/* Ken Burns sutil en la foto del hero */
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.hero-zoom {
+  animation: hero-zoom 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Reveal on scroll (activado por IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Brillo deslizante en botones */
+.btn-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-130%) skewX(-20deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transition: transform 0.6s ease-out;
+}
+
+.btn-sheen:hover::after {
+  transform: translateX(130%) skewX(-20deg);
+}
+
+/* Mapa de sedes (Leaflet) */
+.map-dark .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9)
+    saturate(0.35);
+}
+
+.map-dark .leaflet-control-attribution {
+  background: rgba(14, 14, 16, 0.8);
+  color: var(--muted-2);
+}
+
+.map-dark .leaflet-control-attribution a {
+  color: var(--muted);
+}
+
+.map-dark .leaflet-control-zoom a {
+  background: var(--surface);
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+.map-dark .leaflet-control-zoom a:hover {
+  background: var(--surface-2);
+}
+
+.sede-pin {
+  display: block;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  border: 2px solid var(--background);
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.18),
+    0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.sede-pin--abierta {
+  background: var(--accent);
+}
+
+.sede-pin--preventa {
+  background: var(--foreground);
+}
+
+.sede-pin--espera {
+  background: var(--muted-2);
+}
+
+.map-dark .leaflet-popup-content-wrapper,
+.map-dark .leaflet-popup-tip {
+  background: var(--surface-2);
+  color: var(--foreground);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.map-dark .leaflet-popup-content {
+  margin: 14px 16px;
+}
+
+.sede-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-barlow), sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.sede-popup strong {
+  font-size: 15px;
+}
+
+.sede-popup > span {
+  color: var(--muted);
+}
+
+.sede-popup-status {
+  font-weight: 600;
+}
+
+.sede-popup-status--abierta {
+  color: var(--accent);
+}
+
+.sede-popup-status--preventa {
+  color: var(--foreground);
+}
+
+.sede-popup-status--espera {
+  color: var(--muted-2);
+}
+
+.sede-popup a {
+  margin-top: 4px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .anim-fade-up,
+  .hero-zoom {
+    animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .btn-sheen::after {
+    display: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

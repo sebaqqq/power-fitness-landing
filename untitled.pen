@@ -1,0 +1,3140 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "TSAXF",
+      "x": 960,
+      "y": 0,
+      "name": "Power Fitness — Landing",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "B2C3k",
+          "name": "Navbar",
+          "width": "fill_container",
+          "fill": "#0E0E10F2",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            20,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cyAMY",
+              "name": "Logo",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j9Yb8",
+                  "name": "Logo Power",
+                  "fill": "$text",
+                  "content": "POWER",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "xhyTg",
+                  "name": "Logo Fitness",
+                  "fill": "$accent",
+                  "content": "FITNESS",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VPhs7",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zQRQZ",
+                  "name": "Link Inicio",
+                  "fill": "$text-2",
+                  "content": "Inicio",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "fPaOP",
+                  "name": "Link Sedes",
+                  "fill": "$text-2",
+                  "content": "Sedes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "RlNTl",
+                  "name": "Link Planes",
+                  "fill": "$text-2",
+                  "content": "Planes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "WNNQS",
+                  "name": "Link Convenios",
+                  "fill": "$text-2",
+                  "content": "Convenios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "OiZHI",
+                  "name": "Link Equipamiento",
+                  "fill": "$text-2",
+                  "content": "Equipamiento",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aDAYw",
+              "name": "Nav Right",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "Pr0WZ",
+                  "name": "Icon User",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "user",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "icon",
+                  "id": "Y3u6OO",
+                  "name": "Icon Cart",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "shopping-cart",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "frame",
+                  "id": "HdYRv",
+                  "name": "Nav CTA",
+                  "fill": "$accent",
+                  "cornerRadius": "$radius-sm",
+                  "padding": [
+                    11,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cci64",
+                      "name": "Nav CTA Label",
+                      "fill": "#FFFFFF",
+                      "content": "¡INSCRÍBETE AHORA!",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xcARt",
+          "name": "Hero",
+          "metadata": {
+            "type": "unsplash",
+            "username": "anamariacalugar",
+            "link": "https://unsplash.com/@anamariacalugar",
+            "author": "Calugar Ana Maria"
+          },
+          "clip": true,
+          "width": "fill_container",
+          "height": 660,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1692369608191-005af0051fe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDQyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "sCLg0",
+              "x": 0,
+              "y": 0,
+              "name": "Hero Scrim",
+              "fill": "#0E0E10B8",
+              "width": 1440,
+              "height": 660
+            },
+            {
+              "type": "frame",
+              "id": "zJMoW",
+              "x": 120,
+              "y": 140,
+              "name": "Hero Content",
+              "width": 800,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b1ycut",
+                  "name": "Hero Eyebrow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "GVIQ3",
+                      "name": "Eyebrow Bar",
+                      "fill": "$accent",
+                      "width": 36,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "aRrJF",
+                      "name": "Eyebrow Text",
+                      "fill": "$text-2",
+                      "content": "GIMNASIOS DE ALTA EXIGENCIA · CHILE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "H4I9a",
+                  "name": "Hero H1",
+                  "fill": "$text",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "TU ENTRENAMIENTO,\nSIN LÍMITES.",
+                  "lineHeight": 0.95,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 88,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "y3Yxj",
+                  "name": "Hero Sub",
+                  "fill": "$text-2",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "14 sedes a lo largo de Chile. Un solo poder. Entrena con equipamiento de vanguardia y programas diseñados para llevarte al máximo.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "dzIi2",
+                  "name": "Hero CTA Row",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GwERV",
+                      "name": "CTA Primary",
+                      "fill": "$accent",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v079i",
+                          "name": "CTA Primary Label",
+                          "fill": "#FFFFFF",
+                          "content": "¡INSCRÍBETE AHORA!",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WohX7",
+                      "name": "CTA Secondary",
+                      "cornerRadius": "$radius-sm",
+                      "stroke": "#F5F5F766",
+                      "strokeWidth": 1,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zylnQ",
+                          "name": "CTA Secondary Label",
+                          "fill": "$text",
+                          "content": "CONOCE LOS PLANES",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JcjiC",
+          "name": "Trust Strip",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            32,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "j4FEXJ",
+              "name": "Stat SEDES OPERATIVAS",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hYc2C",
+                  "name": "Stat Num",
+                  "fill": "$accent",
+                  "content": "14",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "wjTmF",
+                  "name": "Stat Labels",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s9u2lH",
+                      "name": "Stat L1",
+                      "fill": "$text",
+                      "content": "SEDES OPERATIVAS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "YFEXn",
+                      "name": "Stat L2",
+                      "fill": "$text-3",
+                      "content": "A lo largo de Chile",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AWsZu",
+              "name": "Stat PRÓXIMAS APERTURAS",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RftrQ",
+                  "name": "Stat Num",
+                  "fill": "$accent",
+                  "content": "2",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 48,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "qSIzl",
+                  "name": "Stat Labels",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nHiBl",
+                      "name": "Stat L1",
+                      "fill": "$text",
+                      "content": "PRÓXIMAS APERTURAS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "J9Vlti",
+                      "name": "Stat L2",
+                      "fill": "$text-3",
+                      "content": "Seguimos creciendo",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gCOjq",
+              "name": "Stat ALTA EXIGENCIA",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "BrIga",
+                  "name": "Stat Icon",
+                  "width": 36,
+                  "height": 36,
+                  "icon": "dumbbell",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "frame",
+                  "id": "sR3Cs",
+                  "name": "Stat Labels",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zdvtb",
+                      "name": "Stat L1",
+                      "fill": "$text",
+                      "content": "ALTA EXIGENCIA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cRV0y",
+                      "name": "Stat L2",
+                      "fill": "$text-3",
+                      "content": "Entrenamiento profesional",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "L8Nsb",
+          "name": "Servicios",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            96,
+            120,
+            48,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "xXy0S",
+              "name": "Servicios Header",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BZf56",
+                  "name": "Serv Eyebrow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "U1jpsi",
+                      "name": "Serv Bar",
+                      "fill": "$accent",
+                      "width": 36,
+                      "height": 4
+                    },
+                    {
+                      "type": "text",
+                      "id": "NzH9L",
+                      "name": "Serv Label",
+                      "fill": "$text-2",
+                      "content": "NUESTROS SERVICIOS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "fdTar",
+                  "name": "Serv H2",
+                  "fill": "$text",
+                  "content": "MÁS QUE UN GIMNASIO.",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 52,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x551ww",
+              "name": "Servicios Cards",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MH6fJ",
+                  "name": "Servicio ALTA EXIGENCIA",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Sjcxd",
+                      "name": "Icon Box",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "#FF2EC41F",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "x8EBM3",
+                          "name": "Serv Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "dumbbell",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PMwez",
+                      "name": "Serv Card Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "ALTA EXIGENCIA",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 26,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C5v9Fc",
+                      "name": "Serv Card Text",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Programas de entrenamiento intensos, diseñados para lograr resultados reales y medibles.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GiSon",
+                  "name": "Servicio TECNOLOGÍA DE VANGUARDIA",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jydD2",
+                      "name": "Icon Box",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "#FF2EC41F",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "UCX8j",
+                          "name": "Serv Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "activity",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "IsXKe",
+                      "name": "Serv Card Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "TECNOLOGÍA DE VANGUARDIA",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 26,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sAW8f",
+                      "name": "Serv Card Text",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Equipamiento de última generación en todas nuestras sedes.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g6H8r",
+                  "name": "Servicio RED DE 14 SEDES",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XLKOk",
+                      "name": "Icon Box",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "#FF2EC41F",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "SroFJ",
+                          "name": "Serv Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "sZNBH",
+                      "name": "Serv Card Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "RED DE 14 SEDES",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 26,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JXjYQ",
+                      "name": "Serv Card Text",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Entrena en el gimnasio Power Fitness más cercano, donde estés.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EMtez",
+                  "name": "Servicio CONVENIOS CORPORATIVOS",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fqJLp",
+                      "name": "Icon Box",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "#FF2EC41F",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "PEEgP",
+                          "name": "Serv Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "briefcase",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "rFQgu",
+                      "name": "Serv Card Title",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "CONVENIOS CORPORATIVOS",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 26,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OinX8",
+                      "name": "Serv Card Text",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Beneficios exclusivos para empresas y sus colaboradores.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WTHOk",
+          "name": "Planes",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            96,
+            120,
+            48,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "AoBss",
+              "name": "Planes Header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JiTVx",
+                  "name": "Planes Header Left",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AUiYd",
+                      "name": "Planes Eyebrow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "hA9md",
+                          "name": "Planes Bar",
+                          "fill": "$accent",
+                          "width": 36,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "XnHih",
+                          "name": "Planes Label",
+                          "fill": "$text-2",
+                          "content": "PLANES Y PRECIOS",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QFaEe",
+                      "name": "Planes H2",
+                      "fill": "$text",
+                      "content": "ELIGE TU PLAN.",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 52,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "YztpV",
+                  "name": "Planes Note",
+                  "fill": "$text-3",
+                  "content": "Activación de $10.000 en todos los planes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZxUy4",
+              "name": "Planes Cards",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MZQcD",
+                  "name": "Card PLAN FULL ANUAL",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$accent",
+                  "strokeWidth": 2,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l4rOf",
+                      "name": "Card Top",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CJEuI",
+                          "name": "Card Name",
+                          "fill": "$text",
+                          "content": "PLAN FULL ANUAL",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uBWAE",
+                          "name": "Card Badge",
+                          "fill": "$accent",
+                          "cornerRadius": 20,
+                          "padding": [
+                            6,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "sFW97",
+                              "name": "Badge Label",
+                              "fill": "#FFFFFF",
+                              "content": "MEJOR PRECIO",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hhkDS",
+                      "name": "Price Row",
+                      "gap": 10,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cXvux",
+                          "name": "Price",
+                          "fill": "$text",
+                          "content": "$15.990",
+                          "lineHeight": 0.9,
+                          "fontFamily": "$font-heading",
+                          "fontSize": 64,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MvkTU",
+                          "name": "Price Suffix",
+                          "fill": "$text-3",
+                          "content": "/ mes",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "u6XO1o",
+                      "name": "Price Detail",
+                      "fill": "$text-3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Total anual $191.880 · Activación $10.000",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "AkURx",
+                      "name": "Divider",
+                      "fill": "$border",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mpTJs",
+                      "name": "Benefits",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fR8qZ",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "I4brF",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "wJKkV",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Acceso a las 14 sedes",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "d1liwX",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "lejBZ",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cjAT0",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Vigencia anual, 12 meses",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "llwFC",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "qRyZM",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "AWy89",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Horario libre todos los días",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qlRKg",
+                      "name": "Card CTA",
+                      "width": "fill_container",
+                      "fill": "$accent",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        15,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YmKIp",
+                          "name": "Card CTA Label",
+                          "fill": "#FFFFFF",
+                          "content": "CONTRATAR PLAN",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pkVDF",
+                  "name": "Card PLAN PREVENTA",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "P4W9b",
+                      "name": "Card Top",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m1titV",
+                          "name": "Card Name",
+                          "fill": "$text",
+                          "content": "PLAN PREVENTA",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 30,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "V8w4G",
+                          "name": "Card Badge",
+                          "cornerRadius": 20,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            6,
+                            14
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dPPEu",
+                              "name": "Badge Label",
+                              "fill": "$text-2",
+                              "content": "PREVENTA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 12,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NQyPS",
+                      "name": "Price Row",
+                      "gap": 10,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l0y6UO",
+                          "name": "Price",
+                          "fill": "$text",
+                          "content": "$129.990",
+                          "lineHeight": 0.9,
+                          "fontFamily": "$font-heading",
+                          "fontSize": 64,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PaWZY",
+                          "name": "Price Suffix",
+                          "fill": "$text-3",
+                          "content": "pago único",
+                          "fontFamily": "$font-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "y8ltto",
+                      "name": "Price Detail",
+                      "fill": "$text-3",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sede Reñaca · Activación $10.000",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "G9qQU6",
+                      "name": "Divider",
+                      "fill": "$border",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "futeB",
+                      "name": "Benefits",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "w5ynqQ",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Zgin2",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KOX1N",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Precio preferente de preventa",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "R24Nqa",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Q5IEAM",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cVqg3",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Sede Reñaca",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "w0zDf5",
+                          "name": "Benefit Row",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "wbjy7",
+                              "name": "Check",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "z4ao14",
+                              "name": "Benefit Text",
+                              "fill": "$text-2",
+                              "content": "Cupos limitados",
+                              "fontFamily": "$font-body",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rfHOf",
+                      "name": "Card CTA",
+                      "width": "fill_container",
+                      "cornerRadius": "$radius-sm",
+                      "stroke": "#F5F5F766",
+                      "strokeWidth": 1,
+                      "padding": [
+                        15,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hF8en",
+                          "name": "Card CTA Label",
+                          "fill": "$text",
+                          "content": "CONTRATAR PLAN",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JdGh9",
+          "name": "Sedes",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            96,
+            120,
+            48,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "lxLcX",
+              "name": "Sedes Header",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qV6E0",
+                  "name": "Sedes Header Left",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YnfVB",
+                      "name": "Sedes Eyebrow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "Z8POe",
+                          "name": "Sedes Bar",
+                          "fill": "$accent",
+                          "width": 36,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "e3lvs",
+                          "name": "Sedes Label",
+                          "fill": "$text-2",
+                          "content": "NUESTRAS SEDES",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "K5guj",
+                      "name": "Sedes H2",
+                      "fill": "$text",
+                      "content": "ENCUENTRA TU POWER FITNESS MÁS CERCANO.",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 52,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Co4fV",
+                  "name": "Map Button",
+                  "cornerRadius": "$radius-sm",
+                  "stroke": "#F5F5F766",
+                  "strokeWidth": 1,
+                  "gap": 10,
+                  "padding": [
+                    13,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "gPhxA",
+                      "name": "Map Icon",
+                      "width": 17,
+                      "height": 17,
+                      "icon": "map",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mlIsS",
+                      "name": "Map Button Label",
+                      "fill": "$text",
+                      "content": "VER MAPA Y HORARIOS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "600",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C1kAD",
+              "name": "Map Cell",
+              "clip": true,
+              "width": "fill_container",
+              "height": 300,
+              "fill": "$surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "GDMCH",
+                  "x": 150,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "G308dX",
+                  "x": 300,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "qrqfL",
+                  "x": 450,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "NtFvH",
+                  "x": 600,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "YP9Gs",
+                  "x": 750,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "vChMh",
+                  "x": 900,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "ucloG",
+                  "x": 1050,
+                  "y": 0,
+                  "name": "Grid V",
+                  "fill": "#2A2A3266",
+                  "width": 1,
+                  "height": 300
+                },
+                {
+                  "type": "rectangle",
+                  "id": "f1gnRX",
+                  "x": 0,
+                  "y": 75,
+                  "name": "Grid H",
+                  "fill": "#2A2A3266",
+                  "width": 1200,
+                  "height": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "tJjQv",
+                  "x": 0,
+                  "y": 150,
+                  "name": "Grid H",
+                  "fill": "#2A2A3266",
+                  "width": 1200,
+                  "height": 1
+                },
+                {
+                  "type": "rectangle",
+                  "id": "KJ76d",
+                  "x": 0,
+                  "y": 225,
+                  "name": "Grid H",
+                  "fill": "#2A2A3266",
+                  "width": 1200,
+                  "height": 1
+                },
+                {
+                  "type": "icon",
+                  "id": "LRxvd",
+                  "x": 210,
+                  "y": 70,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "TO5zR",
+                  "x": 350,
+                  "y": 150,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "B5ills",
+                  "x": 480,
+                  "y": 84,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "R9v4F",
+                  "x": 640,
+                  "y": 190,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "Xijci",
+                  "x": 770,
+                  "y": 100,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "Sr3iQ",
+                  "x": 930,
+                  "y": 210,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "bAxnz",
+                  "x": 1030,
+                  "y": 80,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "icon",
+                  "id": "ITEwX",
+                  "x": 540,
+                  "y": 220,
+                  "name": "Pin",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "map-pin",
+                  "library": "lucide",
+                  "fill": "$accent"
+                },
+                {
+                  "type": "text",
+                  "id": "Vye19",
+                  "x": 32,
+                  "y": 28,
+                  "name": "Map Label",
+                  "fill": "$text-3",
+                  "content": "MAPA DE SEDES",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NVK2z",
+              "name": "Sedes Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Hgq8n",
+                  "name": "Sedes Row 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ur5hr",
+                      "name": "Sede Reñaca",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "KuI2M",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PUClf",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Reñaca",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GQ0ox",
+                      "name": "Sede Viña del Mar",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "u3XtmI",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F85s4",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Viña del Mar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z0DF7E",
+                      "name": "Sede Concón",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "DEz3Q",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xyyvd",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Concón",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m3u0C",
+                      "name": "Sede Valparaíso",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "t7o0mh",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F3f3PG",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Valparaíso",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VkOeY",
+                  "name": "Sedes Row 2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "k4OaOP",
+                      "name": "Sede Quilpué",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "sq2TR",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Oc1Ml",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Quilpué",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a2w8pW",
+                      "name": "Sede Villa Alemana",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "PC3K3",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xaa9e",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Villa Alemana",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zMTm8",
+                      "name": "Sede Quillota",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "nhHGD",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U9qElk",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Quillota",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i806yq",
+                      "name": "Sede La Calera",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "Db1DR",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mRZsN",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "La Calera",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nGrx0",
+                  "name": "Sedes Row 3",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Z213t",
+                      "name": "Sede San Felipe",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "h09pA",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EO6AR",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "San Felipe",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x6Vj8g",
+                      "name": "Sede Los Andes",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "abgXe",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q6yDm",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Los Andes",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EBM37",
+                      "name": "Sede Limache",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "R3trO",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "byGv7",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Limache",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w3EU1",
+                      "name": "Sede Curauma",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "sugpu",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bwtZd",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Curauma",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JycuQ",
+                  "name": "Sedes Row 4",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Aeqe4",
+                      "name": "Sede La Serena",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "H5ZUmW",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TQMPo",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "La Serena",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IVe9D",
+                      "name": "Sede Coquimbo",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "C7C5IV",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "map-pin",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IhKXs",
+                          "name": "Chip Label",
+                          "fill": "$text",
+                          "content": "Coquimbo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jW0IL",
+                      "name": "Sede Ovalle",
+                      "opacity": 0.8,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "J8IFxv",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "timer",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kyJQp",
+                          "name": "Chip Label",
+                          "fill": "$text-3",
+                          "content": "Ovalle",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cMmAs",
+                          "name": "Soon Tag",
+                          "fill": "#FF2EC41F",
+                          "cornerRadius": 10,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZUio0",
+                              "name": "Soon Label",
+                              "fill": "$accent",
+                              "content": "PRONTO",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 0.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ssXPe",
+                      "name": "Sede Rancagua",
+                      "opacity": 0.8,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": 12,
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "gap": 10,
+                      "padding": [
+                        16,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "T6oB3",
+                          "name": "Chip Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "timer",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "I0FCm8",
+                          "name": "Chip Label",
+                          "fill": "$text-3",
+                          "content": "Rancagua",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "spikI",
+                          "name": "Soon Tag",
+                          "fill": "#FF2EC41F",
+                          "cornerRadius": 10,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "trEkC",
+                              "name": "Soon Label",
+                              "fill": "$accent",
+                              "content": "PRONTO",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 0.5
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T0UBg",
+          "name": "Convenios",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            96,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "FrBxL",
+              "name": "Convenios Cell",
+              "clip": true,
+              "width": "fill_container",
+              "height": 360,
+              "fill": "$surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QuOvE",
+                  "name": "Conv Left",
+                  "width": 660,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 56,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eTIRN",
+                      "name": "Conv Eyebrow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "EzOAE",
+                          "name": "Conv Bar",
+                          "fill": "$accent",
+                          "width": 36,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "xVaLS",
+                          "name": "Conv Label",
+                          "fill": "$text-2",
+                          "content": "CONVENIOS CORPORATIVOS",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "600",
+                          "letterSpacing": 2.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "uE6sO",
+                      "name": "Conv H2",
+                      "fill": "$text",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "¿BUSCAS CONVENIOS PARA TU EMPRESA?",
+                      "lineHeight": 1,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 44,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YSQoW",
+                      "name": "Conv Sub",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": 480,
+                      "content": "Únete a las corporaciones que ya entrenan con nosotros y entrega a tu equipo un beneficio real.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DY12m",
+                      "name": "Conv CTA",
+                      "fill": "$accent",
+                      "cornerRadius": "$radius-sm",
+                      "padding": [
+                        15,
+                        28
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HZbpH",
+                          "name": "Conv CTA Label",
+                          "fill": "#FFFFFF",
+                          "content": "SOLICITAR INFORMACIÓN CORPORATIVA",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "O9nbjp",
+                  "name": "Conv Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "lgnwvr",
+                    "link": "https://unsplash.com/@lgnwvr",
+                    "author": "LOGAN WEAVER | @LGNWVR"
+                  },
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1593358578769-b7a7cf27cba7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDQyNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nrRzv",
+          "name": "Footer",
+          "width": "fill_container",
+          "stroke": "$border",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            120,
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "D75sm",
+              "name": "Footer Columns",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HFBqn",
+                  "name": "Footer About",
+                  "width": 400,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "p20Fku",
+                      "name": "Footer Logo",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PojOB",
+                          "name": "F Logo Power",
+                          "fill": "$text",
+                          "content": "POWER",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 22,
+                          "fontWeight": "800",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "VDU82",
+                          "name": "F Logo Fitness",
+                          "fill": "$accent",
+                          "content": "FITNESS",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 22,
+                          "fontWeight": "800",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "vgQFe",
+                      "name": "About Text",
+                      "fill": "$text-2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Especialistas en entrenamiento de alta exigencia. Red de 14 sedes en Chile con tecnología de vanguardia.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Fcgxw",
+                  "name": "Footer Col CONTACTO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gNhnN",
+                      "name": "Col Title CONTACTO",
+                      "fill": "$text",
+                      "content": "CONTACTO",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b6eer",
+                      "name": "Col List CONTACTO",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eq294",
+                          "name": "Item Atención al cliente",
+                          "fill": "$text-2",
+                          "content": "Atención al cliente",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WAwDS",
+                          "name": "Item Corporativo",
+                          "fill": "$text-2",
+                          "content": "Corporativo",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zoDlJ",
+                          "name": "Item Reclutamiento",
+                          "fill": "$text-2",
+                          "content": "Reclutamiento",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "N6npR",
+                  "name": "Footer Col MENÚ",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SliLM",
+                      "name": "Col Title MENÚ",
+                      "fill": "$text",
+                      "content": "MENÚ",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SoTW5",
+                      "name": "Col List MENÚ",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uXbH8",
+                          "name": "Item Inicio",
+                          "fill": "$text-2",
+                          "content": "Inicio",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "H7dhal",
+                          "name": "Item Sedes",
+                          "fill": "$text-2",
+                          "content": "Sedes",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b19cBE",
+                          "name": "Item Planes",
+                          "fill": "$text-2",
+                          "content": "Planes",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ggyPh",
+                          "name": "Item Convenios",
+                          "fill": "$text-2",
+                          "content": "Convenios",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UbwxQ",
+                          "name": "Item Política de Privacidad",
+                          "fill": "$text-2",
+                          "content": "Política de Privacidad",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bCzVL",
+                          "name": "Item Términos y Condiciones",
+                          "fill": "$text-2",
+                          "content": "Términos y Condiciones",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rGhRM",
+                  "name": "Footer Col SÍGUENOS",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pIjJ0",
+                      "name": "Col Title SÍGUENOS",
+                      "fill": "$text",
+                      "content": "SÍGUENOS",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TTyHg",
+                      "name": "Col List SÍGUENOS",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "O0bXMh",
+                          "name": "Social WhatsApp",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "$surface",
+                          "cornerRadius": 20,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "xORVF",
+                              "name": "Social Icon WhatsApp",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "message-circle",
+                              "library": "lucide",
+                              "fill": "$text-2"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GxpB3",
+                          "name": "Social Instagram",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "$surface",
+                          "cornerRadius": 20,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "SeFYv",
+                              "name": "Social Icon Instagram",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "instagram",
+                              "library": "lucide",
+                              "fill": "$text-2"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ULRom",
+                          "name": "Social Facebook",
+                          "width": 40,
+                          "height": 40,
+                          "fill": "$surface",
+                          "cornerRadius": 20,
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "UY1aZ",
+                              "name": "Social Icon Facebook",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "facebook",
+                              "library": "lucide",
+                              "fill": "$text-2"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dyBBu",
+              "name": "Footer Bottom",
+              "width": "fill_container",
+              "stroke": "$border",
+              "strokeWidth": {
+                "top": 1
+              },
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z5Avrb",
+                  "name": "Copyright",
+                  "fill": "$text-3",
+                  "content": "© 2026 Power Fitness Chile. Todos los derechos reservados.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jLkZB",
+                  "name": "Footer Tag",
+                  "fill": "$text-3",
+                  "content": "Tu entrenamiento, sin límites.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "lS0tW",
+          "layoutPosition": "absolute",
+          "x": 1356,
+          "y": 640,
+          "name": "Floating Widgets",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "frame",
+              "id": "f1k1ZB",
+              "name": "WhatsApp Widget",
+              "width": 52,
+              "height": 52,
+              "fill": "$whatsapp",
+              "cornerRadius": 26,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "x0g2uc",
+                  "name": "WhatsApp Icon",
+                  "width": 22,
+                  "height": 22,
+                  "icon": "message-circle",
+                  "library": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JUjYm",
+              "name": "Cart Widget",
+              "width": 52,
+              "height": 52,
+              "fill": "$surface",
+              "cornerRadius": 26,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "k43UUq",
+                  "name": "Cart Widget Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "shopping-cart",
+                  "library": "lucide",
+                  "fill": "$text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "id": "vpE6B",
+      "x": 2480,
+      "y": 40,
+      "name": "Nota: Flujo 1 — Inscripción (conversión principal)",
+      "width": 380,
+      "height": 170,
+      "content": "Flujo 1 — Inscripción (conversión principal)\n\nCTA del navbar y del hero ('¡Inscríbete ahora!') llevan al flujo de registro/checkout. 'Conoce los planes' hace scroll a la sección Planes."
+    },
+    {
+      "type": "note",
+      "id": "j0jIe",
+      "x": 2480,
+      "y": 230,
+      "name": "Nota: Flujo 2 — Contratar plan",
+      "width": 380,
+      "height": 170,
+      "content": "Flujo 2 — Contratar plan\n\n'Contratar plan' agrega al carrito (widget flotante) y sigue a checkout. Plan Full Anual destacado con borde magenta y badge 'Mejor precio'."
+    },
+    {
+      "type": "note",
+      "id": "olyLs",
+      "x": 2480,
+      "y": 420,
+      "name": "Nota: Flujo 3 — Sedes",
+      "width": 380,
+      "height": 170,
+      "content": "Flujo 3 — Sedes\n\n'Ver mapa y horarios' abre el mapa interactivo con horarios por sede. Click en una sede filtra el mapa. 2 sedes marcadas 'Pronto'. VALIDAR: nombres de sedes son placeholder, solo Reñaca está confirmada."
+    },
+    {
+      "type": "note",
+      "id": "vmph6",
+      "x": 2480,
+      "y": 610,
+      "name": "Nota: Flujo 4 — Convenios B2B",
+      "width": 380,
+      "height": 170,
+      "content": "Flujo 4 — Convenios B2B\n\n'Solicitar información corporativa' abre formulario de contacto comercial (lead gen)."
+    },
+    {
+      "type": "note",
+      "id": "kqpO9",
+      "x": 2480,
+      "y": 800,
+      "name": "Nota: Flujo 5 — Contacto directo",
+      "width": 380,
+      "height": 170,
+      "content": "Flujo 5 — Contacto directo\n\nWidget flotante de WhatsApp abre chat de atención; widget de carrito muestra el resumen de compra. Ambos persisten al hacer scroll."
+    },
+    {
+      "type": "note",
+      "id": "WYObr",
+      "x": 2480,
+      "y": 990,
+      "name": "Nota: Interacciones sugeridas",
+      "width": 380,
+      "height": 170,
+      "content": "Interacciones sugeridas\n\nNavbar fijo con fondo translúcido al hacer scroll. Reveal on scroll suave por sección, hover con elevación leve en cards de planes y sedes. Contadores 14/2 animados. Respetar prefers-reduced-motion."
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#0E0E10"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#17171B"
+    },
+    "surface-2": {
+      "type": "color",
+      "value": "#1E1E24"
+    },
+    "border": {
+      "type": "color",
+      "value": "#2A2A32"
+    },
+    "text": {
+      "type": "color",
+      "value": "#F5F5F7"
+    },
+    "text-2": {
+      "type": "color",
+      "value": "#9C9CA6"
+    },
+    "text-3": {
+      "type": "color",
+      "value": "#63636D"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#FF2EC4"
+    },
+    "accent-2": {
+      "type": "color",
+      "value": "#00FFA3"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Barlow Condensed"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Barlow"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "JetBrains Mono"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "whatsapp": {
+      "type": "color",
+      "value": "#25D366"
+    }
+  },
+  "fileToken": "2ee64593-f263-43b5-ad00-663286cdb868"
+}
