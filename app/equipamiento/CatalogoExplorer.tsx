@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { useCart } from "../components/CartProvider";
 import { Icon } from "../components/Icon";
 import {
   categorias,
@@ -13,7 +15,24 @@ import {
 type Filtro = "Todo" | CategoriaProducto;
 
 export function CatalogoExplorer() {
+  const { add } = useCart();
   const [filtro, setFiltro] = useState<Filtro>("Todo");
+  const [addedId, setAddedId] = useState<string | null>(null);
+  const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(
+    () => () => {
+      if (timeout.current) clearTimeout(timeout.current);
+    },
+    [],
+  );
+
+  const onAdd = (id: string) => {
+    add(id);
+    setAddedId(id);
+    if (timeout.current) clearTimeout(timeout.current);
+    timeout.current = setTimeout(() => setAddedId(null), 1200);
+  };
 
   const visibles =
     filtro === "Todo"
@@ -23,21 +42,15 @@ export function CatalogoExplorer() {
   return (
     <section aria-label="Catálogo de equipamiento">
       <div className="flex flex-wrap items-end justify-between gap-6">
-        <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-3">
-            <span className="h-1 w-6 bg-accent" />
-            <h2 className="font-heading text-4xl font-extrabold leading-none">
-              CATÁLOGO.
-            </h2>
-          </div>
+        <div className="flex items-center gap-3">
+          <span className="h-1 w-6 bg-accent" />
+          <h2 className="font-heading text-4xl font-extrabold leading-none">
+            CATÁLOGO.
+          </h2>
         </div>
-        <a
-          href="#"
-          className="flex items-center gap-2 text-[13px] font-semibold tracking-[0.12em] text-accent transition-opacity hover:opacity-80"
-        >
-          VER TODO
-          <Icon name="arrow-right" size={15} />
-        </a>
+        <p className="text-sm text-muted-2">
+          {visibles.length} {visibles.length === 1 ? "producto" : "productos"}
+        </p>
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2.5" role="group" aria-label="Filtrar por categoría">
@@ -75,9 +88,12 @@ export function CatalogoExplorer() {
           {visibles.map((p) => (
             <article
               key={p.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-surface transition duration-300 hover:-translate-y-1.5 hover:border-accent/60 hover:shadow-[0_12px_40px_-12px_rgba(255,46,196,0.35)]"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-line bg-surface transition duration-300 hover:-translate-y-1.5 hover:border-accent/60 hover:shadow-[0_12px_40px_-12px_rgba(255,46,196,0.35)]"
             >
-              <div className="relative h-52 overflow-hidden bg-surface-2">
+              <Link
+                href={`/equipamiento/${p.id}`}
+                className="relative block h-52 overflow-hidden bg-surface-2"
+              >
                 <Image
                   src={p.image}
                   alt={p.imageAlt}
@@ -85,13 +101,18 @@ export function CatalogoExplorer() {
                   sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-              </div>
+              </Link>
               <div className="flex flex-1 flex-col gap-2.5 p-5">
                 <span className="text-[11px] font-bold tracking-[0.18em] text-muted-2">
                   {p.categoria.toUpperCase()}
                 </span>
                 <h3 className="text-[17px] font-semibold leading-snug">
-                  {p.name}
+                  <Link
+                    href={`/equipamiento/${p.id}`}
+                    className="transition-colors hover:text-accent"
+                  >
+                    {p.name}
+                  </Link>
                 </h3>
                 <div className="mt-auto flex items-center justify-between pt-2">
                   <span className="font-heading text-2xl font-extrabold">
@@ -99,9 +120,13 @@ export function CatalogoExplorer() {
                   </span>
                   <button
                     aria-label={`Agregar ${p.name} al carro`}
+                    onClick={() => onAdd(p.id)}
                     className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-white transition-transform duration-200 hover:scale-110 active:scale-95"
                   >
-                    <Icon name="cart" size={17} />
+                    <Icon
+                      name={addedId === p.id ? "check-circle" : "cart"}
+                      size={17}
+                    />
                   </button>
                 </div>
               </div>

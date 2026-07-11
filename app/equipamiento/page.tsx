@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { AddToCartButton } from "../components/AddToCartButton";
 import { FloatingWidgets } from "../components/FloatingWidgets";
 import { Footer } from "../components/Footer";
 import { Icon } from "../components/Icon";
@@ -43,7 +45,7 @@ export default function EquipamientoPage() {
                 DESTACADO DEL MES
               </span>
               <div className="flex flex-col gap-3">
-                <h2 className="font-heading text-4xl font-extrabold leading-none sm:text-5xl">
+                <h2 className="font-heading text-4xl font-extrabold uppercase leading-none sm:text-5xl">
                   {destacado.name}
                 </h2>
                 <p className="max-w-md leading-relaxed text-muted">
@@ -69,13 +71,13 @@ export default function EquipamientoPage() {
                 <span className="text-sm text-muted-2">{destacado.cuotas}</span>
               </div>
               <div className="flex flex-wrap items-center gap-4">
-                <button className="btn-sheen flex items-center gap-2.5 rounded-lg bg-accent px-7 py-3.5 text-sm font-bold tracking-wide text-white transition-transform duration-200 hover:scale-[1.03] active:scale-95">
-                  <Icon name="cart" size={17} />
-                  AGREGAR AL CARRO
-                </button>
-                <button className="rounded-lg border border-foreground/40 px-7 py-3.5 text-sm font-semibold tracking-wide transition-colors duration-200 hover:border-foreground hover:bg-foreground/5">
+                <AddToCartButton id={destacado.id} />
+                <Link
+                  href={`/equipamiento/${destacado.id}`}
+                  className="rounded-lg border border-foreground/40 px-7 py-3.5 text-sm font-semibold tracking-wide transition-colors duration-200 hover:border-foreground hover:bg-foreground/5"
+                >
                   VER DETALLE
-                </button>
+                </Link>
               </div>
             </div>
             <div className="group relative min-h-72 overflow-hidden">

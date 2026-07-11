@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useCart } from "./CartProvider";
 import { Icon } from "./Icon";
 
 const links = [
@@ -16,6 +17,7 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { count } = useCart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -70,12 +72,18 @@ export function Navbar() {
           >
             <Icon name="user" size={19} />
           </button>
-          <button
-            aria-label="Carrito de compras"
-            className="hidden text-muted transition-colors hover:text-foreground sm:block"
+          <Link
+            href="/carro"
+            aria-label={`Carro de compras${count > 0 ? ` (${count} productos)` : ""}`}
+            className="relative hidden text-muted transition-colors hover:text-foreground sm:block"
           >
             <Icon name="cart" size={19} />
-          </button>
+            {count > 0 && (
+              <span className="absolute -right-2.5 -top-2 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent px-1 text-[10px] font-bold leading-none text-white">
+                {count > 99 ? "99+" : count}
+              </span>
+            )}
+          </Link>
           <Link
             href="/#planes"
             className="btn-sheen hidden rounded-lg bg-accent px-5 py-2.5 text-sm font-bold tracking-wide text-white transition-transform duration-200 hover:scale-[1.03] active:scale-95 sm:block"

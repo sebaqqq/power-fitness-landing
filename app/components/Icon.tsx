@@ -21,7 +21,11 @@ export type IconName =
   | "truck"
   | "shield"
   | "credit-card"
-  | "arrow-right";
+  | "arrow-right"
+  | "arrow-left"
+  | "plus"
+  | "minus"
+  | "trash";
 
 const paths: Record<IconName, JSX.Element> = {
   user: (
@@ -138,6 +142,28 @@ const paths: Record<IconName, JSX.Element> = {
     <>
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
+    </>
+  ),
+  "arrow-left": (
+    <>
+      <path d="M19 12H5" />
+      <path d="m12 19-7-7 7-7" />
+    </>
+  ),
+  plus: (
+    <>
+      <path d="M5 12h14" />
+      <path d="M12 5v14" />
+    </>
+  ),
+  minus: <path d="M5 12h14" />,
+  trash: (
+    <>
+      <path d="M10 11v6" />
+      <path d="M14 11v6" />
+      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+      <path d="M3 6h18" />
+      <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
     </>
   ),
 };
