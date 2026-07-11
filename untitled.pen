@@ -4651,30 +4651,6 @@
                           "fontSize": 12.5,
                           "fontWeight": "600",
                           "letterSpacing": 2
-                        },
-                        {
-                          "type": "frame",
-                          "id": "L4lq1O",
-                          "name": "Tag Por Confirmar",
-                          "fill": "#FF2EC41F",
-                          "cornerRadius": 100,
-                          "padding": [
-                            4,
-                            12
-                          ],
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "lFu4s",
-                              "name": "Tag Label",
-                              "fill": "$accent",
-                              "content": "POR CONFIRMAR",
-                              "fontFamily": "$font-body",
-                              "fontSize": 10.5,
-                              "fontWeight": "700",
-                              "letterSpacing": 1
-                            }
-                          ]
                         }
                       ]
                     },
@@ -4780,7 +4756,7 @@
                                   "id": "yBEUD",
                                   "name": "Hora",
                                   "fill": "$text",
-                                  "content": "08:00 – 20:00",
+                                  "content": "09:00 – 21:00",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 15,
                                   "fontWeight": "600"
@@ -4794,6 +4770,10 @@
                           "id": "a940u",
                           "name": "Fila Domingo y feriados",
                           "width": "fill_container",
+                          "stroke": "$border",
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
                           "padding": [
                             14,
                             0
@@ -4811,7 +4791,7 @@
                                   "id": "v6iGX",
                                   "name": "Día",
                                   "fill": "$text-2",
-                                  "content": "Domingo y feriados",
+                                  "content": "Domingo",
                                   "fontFamily": "$font-body",
                                   "fontSize": 15,
                                   "fontWeight": "500"
@@ -4826,6 +4806,54 @@
                                 {
                                   "type": "text",
                                   "id": "D2p1m",
+                                  "name": "Hora",
+                                  "fill": "$text-3",
+                                  "content": "Cerrado",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "c5zp6",
+                          "name": "Fila Festivos",
+                          "width": "fill_container",
+                          "padding": [
+                            14,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "FVSLP",
+                              "name": "Celda Día",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "hrmxZ",
+                                  "name": "Día",
+                                  "fill": "$text-2",
+                                  "content": "Festivos",
+                                  "fontFamily": "$font-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "eBa2N",
+                              "name": "Celda Hora",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "BNjhu",
                                   "name": "Hora",
                                   "fill": "$text",
                                   "content": "09:00 – 14:00",
@@ -4844,7 +4872,7 @@
                       "id": "T0p3er",
                       "name": "Horario Nota",
                       "fill": "$text-3",
-                      "content": "* Horarios referenciales. Se actualizarán con la información oficial de cada sede.",
+                      "content": "Los domingos solo abren las sedes de Peñaflor (2), Talagante, El Monte y Padre Hurtado.",
                       "fontFamily": "$font-body",
                       "fontSize": 12.5,
                       "fontWeight": "normal"
@@ -5011,7 +5039,1709 @@
       "name": "Nota: Vista Sedes y Horarios",
       "width": 380,
       "height": 220,
-      "content": "Vista Sedes y Horarios (abre desde 'Ver mapa y horarios')\n\nClick en una sede de la lista selecciona el pin en el mapa y actualiza el panel de horarios. Filtros por estado arriba.\n\nVALIDAR: los horarios son referenciales, pendiente que negocio entregue los oficiales por sede. Direcciones oficiales cargadas 2026-07-11 (mismas de app/data/sedes.ts)."
+      "content": "Vista Sedes y Horarios (abre desde 'Ver mapa y horarios')\n\nClick en una sede de la lista selecciona el pin en el mapa y actualiza el panel de horarios. Filtros por estado arriba.\n\nHorarios oficiales cargados el 2026-07-11 e implementados en /sedes (app/sedes/). Horario general L-V 06:00–23:00, Sá 09:00–21:00, Fes 09:00–14:00; domingos solo VM, Miraflores, Talagante, El Monte y P. Hurtado. Lista de espera sin horarios publicados."
+    },
+    {
+      "type": "frame",
+      "id": "iAYPn",
+      "x": 5000,
+      "y": -160,
+      "name": "Power Fitness — Equipamiento",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Yzg9G",
+          "name": "Navbar",
+          "width": "fill_container",
+          "fill": "#0E0E10F2",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            20,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GSwC2",
+              "name": "Logo",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ovAHT",
+                  "name": "Logo Power",
+                  "fill": "$text",
+                  "content": "POWER",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "g6dEy",
+                  "name": "Logo Fitness",
+                  "fill": "$accent",
+                  "content": "FITNESS",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 26,
+                  "fontWeight": "800",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FoYIa",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YbPUz",
+                  "name": "Link Inicio",
+                  "fill": "$text-2",
+                  "content": "Inicio",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "jPGpy",
+                  "name": "Link Sedes",
+                  "fill": "$text-2",
+                  "content": "Sedes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "p6XqTo",
+                  "name": "Link Planes",
+                  "fill": "$text-2",
+                  "content": "Planes",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "nknOi",
+                  "name": "Link Convenios",
+                  "fill": "$text-2",
+                  "content": "Convenios",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "ssCiX",
+                  "name": "Link Equipamiento",
+                  "fill": "$text",
+                  "content": "Equipamiento",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "h6cJxZ",
+              "name": "Nav Right",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "uTV7p",
+                  "name": "Icon User",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "user",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "icon",
+                  "id": "SNem1",
+                  "name": "Icon Cart",
+                  "width": 19,
+                  "height": 19,
+                  "icon": "shopping-cart",
+                  "library": "lucide",
+                  "fill": "$text-2"
+                },
+                {
+                  "type": "frame",
+                  "id": "RI1cM",
+                  "name": "Nav CTA",
+                  "fill": "$accent",
+                  "cornerRadius": "$radius-sm",
+                  "padding": [
+                    11,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Naf6t",
+                      "name": "Nav CTA Label",
+                      "fill": "#FFFFFF",
+                      "content": "¡INSCRÍBETE AHORA!",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JBdqg",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            120,
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "bBR3X",
+              "name": "Header Top",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SRjKB",
+                  "name": "Eyebrow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "jK09p",
+                      "name": "Eyebrow Bar",
+                      "fill": "$accent",
+                      "width": 26,
+                      "height": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Roq1F",
+                      "name": "Eyebrow Text",
+                      "fill": "$text-2",
+                      "content": "TIENDA OFICIAL · DESPACHO A TODO CHILE",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 2.5
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "uCgeR",
+                  "name": "H1",
+                  "fill": "$text",
+                  "content": "EQUIPAMIENTO PROFESIONAL.",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 52,
+                  "fontWeight": "800",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "text",
+                  "id": "YJLAK",
+                  "name": "Subtitle",
+                  "fill": "$text-2",
+                  "content": "Las mismas máquinas y accesorios que entrenas en nuestras sedes, ahora para tu casa o tu empresa.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CKIZo",
+              "name": "Filter Chips",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z5rhy",
+                  "name": "Chip Todo",
+                  "fill": "$accent",
+                  "cornerRadius": 100,
+                  "stroke": "$accent",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DkVg8",
+                      "name": "Chip Label",
+                      "fill": "#FFFFFF",
+                      "content": "TODO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pUDeh",
+                  "name": "Chip Máquinas",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mg048",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "MÁQUINAS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nPLLG",
+                  "name": "Chip Fuerza",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y8voLF",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "FUERZA",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "doddh",
+                  "name": "Chip Accesorios",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hp0Nh",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "ACCESORIOS",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H9lVFC",
+                  "name": "Chip Recuperación",
+                  "fill": "$surface",
+                  "cornerRadius": 100,
+                  "stroke": "$border",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    9,
+                    18
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W6hPA",
+                      "name": "Chip Label",
+                      "fill": "$text-2",
+                      "content": "RECUPERACIÓN",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QMvIb",
+          "name": "Content",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            0,
+            120,
+            96,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "c7PbUc",
+              "name": "Featured Banner",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Jg3ma",
+                  "name": "Featured Info",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 44,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NvZZz",
+                      "name": "Badge Destacado",
+                      "fill": "$accent",
+                      "cornerRadius": 100,
+                      "padding": [
+                        7,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kKYAH",
+                          "name": "Badge Label",
+                          "fill": "#FFFFFF",
+                          "content": "DESTACADO DEL MES",
+                          "fontFamily": "$font-body",
+                          "fontSize": 12,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JOul2",
+                      "name": "Featured Title Block",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dG0ty",
+                          "name": "Featured Name",
+                          "fill": "$text",
+                          "content": "TROTADORA POWER T-900",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 38,
+                          "fontWeight": "800",
+                          "letterSpacing": 0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "F0RX6",
+                          "name": "Featured Desc",
+                          "fill": "$text-2",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Motor de 3.5 HP, velocidad hasta 20 km/h y superficie de carrera de 152 × 51 cm. La misma línea que corre en nuestras 14 sedes.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uQFBg",
+                      "name": "Featured Specs",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "n0vYW",
+                          "name": "Spec Row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "aMmdk",
+                              "name": "Spec Icon",
+                              "width": 17,
+                              "height": 17,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OaPBu",
+                              "name": "Spec Text",
+                              "fill": "$text-2",
+                              "content": "Garantía 12 meses con servicio técnico en Chile",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E2f1x",
+                          "name": "Spec Row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "imLOJ",
+                              "name": "Spec Icon",
+                              "width": 17,
+                              "height": 17,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NBF7y",
+                              "name": "Spec Text",
+                              "fill": "$text-2",
+                              "content": "Armado e instalación incluidos en RM",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oMoFY",
+                          "name": "Spec Row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "GznHy",
+                              "name": "Spec Icon",
+                              "width": 17,
+                              "height": 17,
+                              "icon": "circle-check",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            },
+                            {
+                              "type": "text",
+                              "id": "thd29",
+                              "name": "Spec Text",
+                              "fill": "$text-2",
+                              "content": "Retiro gratis en tu sede más cercana",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TCA0P",
+                      "name": "Featured Price Row",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zBilJ",
+                          "name": "Featured Price",
+                          "fill": "$text",
+                          "content": "$1.299.990",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 36,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HYp2Y",
+                          "name": "Featured Cuotas",
+                          "fill": "$text-3",
+                          "content": "o 12 cuotas de $108.333",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h7yUo",
+                      "name": "Featured CTA Row",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ZqxSb",
+                          "name": "CTA Agregar",
+                          "fill": "$accent",
+                          "cornerRadius": "$radius-sm",
+                          "gap": 10,
+                          "padding": [
+                            13,
+                            26
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "uGq9H",
+                              "name": "CTA Cart Icon",
+                              "width": 17,
+                              "height": 17,
+                              "icon": "shopping-cart",
+                              "library": "lucide",
+                              "fill": "#FFFFFF"
+                            },
+                            {
+                              "type": "text",
+                              "id": "eYaDI",
+                              "name": "CTA Label",
+                              "fill": "#FFFFFF",
+                              "content": "AGREGAR AL CARRO",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "700",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "lq6yp",
+                          "name": "CTA Detalle",
+                          "cornerRadius": "$radius-sm",
+                          "stroke": "$border",
+                          "strokeWidth": 1,
+                          "padding": [
+                            13,
+                            26
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "P05T4K",
+                              "name": "Detalle Label",
+                              "fill": "$text",
+                              "content": "VER DETALLE",
+                              "fontFamily": "$font-body",
+                              "fontSize": 14,
+                              "fontWeight": "600",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xJIA4",
+                  "name": "Featured Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "erandesign",
+                    "link": "https://unsplash.com/@erandesign",
+                    "author": "eran design"
+                  },
+                  "width": 560,
+                  "height": 500,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1761971975769-97e598bf526b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ha7cY",
+              "name": "Catálogo",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "F0LUf",
+                  "name": "Catálogo Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mL4tT",
+                      "name": "Catálogo Title",
+                      "fill": "$text",
+                      "content": "CATÁLOGO.",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 32,
+                      "fontWeight": "800",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rjv07",
+                      "name": "Ver Todo",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tog1g",
+                          "name": "Ver Todo Label",
+                          "fill": "$accent",
+                          "content": "VER TODO",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "icon",
+                          "id": "eZ3Kb",
+                          "name": "Ver Todo Icon",
+                          "width": 15,
+                          "height": 15,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$accent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VjXOc",
+                  "name": "Product Row",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pIExX",
+                      "name": "Card Rack de Sentadillas R-300",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JleuD",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "reddfrancisco",
+                            "link": "https://unsplash.com/@reddfrancisco",
+                            "author": "Redd Francisco"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1709315969349-1a43dea3efdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZZWBP",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VjT4O",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "FUERZA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "Pc9Up",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Rack de Sentadillas R-300",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "skCzI",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jzdgA",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$549.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "NGA2E",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "Mj4Vg",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cZ0mq",
+                      "name": "Card Set Discos Olímpicos 100 kg",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "h4LO4o",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "nate_dumlao",
+                            "link": "https://unsplash.com/@nate_dumlao",
+                            "author": "Nathan Dumlao"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1589579234086-a5b94db4e4a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RIosd",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZTcDa",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "FUERZA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ypubx",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Set Discos Olímpicos 100 kg",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "I19Rm",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mTaM7",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$329.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "F8mmPS",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "GN79S",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "z2bzn",
+                      "name": "Card Mancuernas Ajustables 24 kg",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "EHzPV",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "itzelglezlara",
+                            "link": "https://unsplash.com/@itzelglezlara",
+                            "author": "Itzel González Lara"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1608947325823-976b1c65d14c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wkbWo",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "p0YBqb",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "FUERZA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "T7w5rM",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Mancuernas Ajustables 24 kg",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "IrQyf",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "SHcM8",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$189.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "BLv5H",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "ZJNK7",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZDIPk",
+                  "name": "Product Row",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "x0Zb7Z",
+                      "name": "Card Bicicleta Spinning S-200",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JW4op",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "intenzafitness",
+                            "link": "https://unsplash.com/@intenzafitness",
+                            "author": "Intenza Fitness"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1637904215427-42481f0eaefa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDcyNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "v9Liqg",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CzBJi",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "MÁQUINAS",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "GEoRY",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Bicicleta Spinning S-200",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aNDUG",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "g9nzp",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$449.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "M1UUHL",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "MLzfd",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mXN1S",
+                      "name": "Card Banco Ajustable B-100",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "A45xP",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "francotheshooter",
+                            "link": "https://unsplash.com/@francotheshooter",
+                            "author": "Franco Debartolo"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1778731660302-cfbe94f73683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Oe1r4",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ff59A",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "FUERZA",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "jJ9qU",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Banco Ajustable B-100",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VP7iQ",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RAiOS",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$159.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "b6ww0Z",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "hxFo1",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tAxjN",
+                      "name": "Card Kit Kettlebell + Bandas",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "stroke": "$border",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "BsGEc",
+                          "name": "Card Image",
+                          "metadata": {
+                            "type": "unsplash",
+                            "username": "rizlas",
+                            "link": "https://unsplash.com/@rizlas",
+                            "author": "Marvin Cors"
+                          },
+                          "width": "fill_container",
+                          "height": 210,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://images.unsplash.com/photo-1639653818637-d061a28959ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDY4MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+                            "mode": "fill"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fSP50",
+                          "name": "Card Body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20,
+                            20,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "UtRSX",
+                              "name": "Card Category",
+                              "fill": "$text-3",
+                              "content": "ACCESORIOS",
+                              "fontFamily": "$font-body",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 2
+                            },
+                            {
+                              "type": "text",
+                              "id": "D4U2f",
+                              "name": "Card Name",
+                              "fill": "$text",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Kit Kettlebell + Bandas",
+                              "fontFamily": "$font-body",
+                              "fontSize": 17,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Z4RcDv",
+                              "name": "Card Price Row",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ilIwM",
+                                  "name": "Card Price",
+                                  "fill": "$text",
+                                  "content": "$59.990",
+                                  "fontFamily": "$font-heading",
+                                  "fontSize": 24,
+                                  "fontWeight": "800"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "WZXLu",
+                                  "name": "Card Add",
+                                  "width": 40,
+                                  "height": 40,
+                                  "fill": "$accent",
+                                  "cornerRadius": "$radius-sm",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "ex4kK",
+                                      "name": "Card Add Icon",
+                                      "width": 17,
+                                      "height": 17,
+                                      "icon": "shopping-cart",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Aogfx",
+              "name": "Beneficios Compra",
+              "width": "fill_container",
+              "fill": "$surface",
+              "cornerRadius": "$radius-lg",
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "padding": [
+                28,
+                36
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "N4QY3s",
+                  "name": "Beneficio Despacho a todo Chile",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "x6LF21",
+                      "name": "Beneficio Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "truck",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hftPD",
+                      "name": "Beneficio Text",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pgeyW",
+                          "name": "Beneficio Title",
+                          "fill": "$text",
+                          "content": "Despacho a todo Chile",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YRrKh",
+                          "name": "Beneficio Sub",
+                          "fill": "$text-2",
+                          "content": "Envío calculado al pagar",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C59Mc",
+                  "name": "Beneficio Retiro en sede",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "G4CZa",
+                      "name": "Beneficio Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "map-pin",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rsPPO",
+                      "name": "Beneficio Text",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FmsZT",
+                          "name": "Beneficio Title",
+                          "fill": "$text",
+                          "content": "Retiro en sede",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pbvfp",
+                          "name": "Beneficio Sub",
+                          "fill": "$text-2",
+                          "content": "Gratis en tus 14 sedes",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n4WS4Z",
+                  "name": "Beneficio Garantía 12 meses",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ktD5Y",
+                      "name": "Beneficio Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "shield-check",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yZJg3",
+                      "name": "Beneficio Text",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V5Mp5d",
+                          "name": "Beneficio Title",
+                          "fill": "$text",
+                          "content": "Garantía 12 meses",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zeeWd",
+                          "name": "Beneficio Sub",
+                          "fill": "$text-2",
+                          "content": "Servicio técnico local",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nCpRm",
+                  "name": "Beneficio Hasta 12 cuotas",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "i8qk9u",
+                      "name": "Beneficio Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "credit-card",
+                      "library": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "S866l4",
+                      "name": "Beneficio Text",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZbNvh",
+                          "name": "Beneficio Title",
+                          "fill": "$text",
+                          "content": "Hasta 12 cuotas",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ahuwT",
+                          "name": "Beneficio Sub",
+                          "fill": "$text-2",
+                          "content": "Webpay y transferencia",
+                          "fontFamily": "$font-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "id": "CfWLJ",
+      "x": 6520,
+      "y": -160,
+      "name": "Nota: Vista Equipamiento",
+      "width": 380,
+      "height": 0,
+      "content": "Vista Equipamiento (tienda)\n\nTODO PLACEHOLDER — validar con negocio:\n• Productos, modelos y precios son inventados (no hay catálogo real aún)\n• Cuotas: '12 cuotas de $108.333' es referencial, definir con medio de pago\n• Garantía 12 meses / armado incluido en RM / retiro en sede: confirmar política\n• Categorías del filtro (Máquinas, Fuerza, Accesorios, Recuperación): confirmar taxonomía\n• Imágenes: stock de referencia, reemplazar por fotos reales de producto\n\nFlujo: carro de compras ya existe en navbar (ícono). Definir checkout (Webpay / transferencia)."
     }
   ],
   "variables": {
